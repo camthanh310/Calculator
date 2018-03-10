@@ -95,6 +95,7 @@
             // 
             this.txtKQ.Location = new System.Drawing.Point(101, 73);
             this.txtKQ.Name = "txtKQ";
+            this.txtKQ.ReadOnly = true;
             this.txtKQ.Size = new System.Drawing.Size(100, 20);
             this.txtKQ.TabIndex = 5;
             // 
