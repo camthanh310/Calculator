@@ -126,6 +126,7 @@
             this.btnChia.TabIndex = 9;
             this.btnChia.Text = "/";
             this.btnChia.UseVisualStyleBackColor = true;
+            this.btnChia.Click += new System.EventHandler(this.btnChia_Click);
             // 
             // button1
             // 

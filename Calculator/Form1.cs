@@ -37,5 +37,16 @@ namespace Calculator
                 txtKQ.Text = kq.ToString();
             }
         }
+
+        private void btnChia_Click(object sender, EventArgs e)
+        {
+            if (txtSoA.Text != "" && txtSoB.Text != "")
+            {
+                double a = double.Parse(txtSoA.Text);
+                double b = double.Parse(txtSoB.Text);
+                double kq = a / b;
+                txtKQ.Text = kq.ToString();
+            }
+        }
     }
 }
