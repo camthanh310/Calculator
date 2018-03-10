@@ -34,7 +34,7 @@ namespace Calculator
                 double a = double.Parse(txtSoA.Text);
                 double b = double.Parse(txtSoB.Text);
                 double kq = a - b;
-                txtKQ.Text = kq.ToString();
+                txtKQ.Text = kq.ToString() + "tru";
             }
         }
     }
