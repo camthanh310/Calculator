@@ -15,5 +15,15 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void btnTinh_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtSo1.Text);
+            int b = int.Parse(txtSo2.Text);
+            int itong = 0;
+            itong = a + b;
+            label1.Text = itong.ToString();
+
+        }
     }
 }
