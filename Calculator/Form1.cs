@@ -16,14 +16,26 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void btnTinh_Click(object sender, EventArgs e)
+        private void btnCong_Click(object sender, EventArgs e)
         {
-            int a = int.Parse(txtSo1.Text);
-            int b = int.Parse(txtSo2.Text);
-            int itong = 0;
-            itong = a + b;
-            label1.Text = itong.ToString();
+            if (txtSoA.Text != "" && txtSoB.Text != "")
+            {
+                double a = double.Parse(txtSoA.Text);
+                double b = double.Parse(txtSoB.Text);
+                double kq = a + b;
+                txtKQ.Text = kq.ToString();
+            }
+        }
 
+        private void btnTru_Click(object sender, EventArgs e)
+        {
+            if (txtSoA.Text != "" && txtSoB.Text != "")
+            {
+                double a = double.Parse(txtSoA.Text);
+                double b = double.Parse(txtSoB.Text);
+                double kq = a - b;
+                txtKQ.Text = kq.ToString();
+            }
         }
     }
 }

@@ -28,52 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSo1 = new System.Windows.Forms.TextBox();
-            this.btnTinh = new System.Windows.Forms.Button();
-            this.txtSo2 = new System.Windows.Forms.TextBox();
+            this.txtSoA = new System.Windows.Forms.TextBox();
+            this.btnCong = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSoB = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtKQ = new System.Windows.Forms.TextBox();
+            this.btnTru = new System.Windows.Forms.Button();
+            this.btnNhan = new System.Windows.Forms.Button();
+            this.btnChia = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtSo1
+            // txtSoA
             // 
-            this.txtSo1.Location = new System.Drawing.Point(89, 51);
-            this.txtSo1.Name = "txtSo1";
-            this.txtSo1.Size = new System.Drawing.Size(100, 20);
-            this.txtSo1.TabIndex = 0;
+            this.txtSoA.Location = new System.Drawing.Point(101, 12);
+            this.txtSoA.Name = "txtSoA";
+            this.txtSoA.Size = new System.Drawing.Size(100, 20);
+            this.txtSoA.TabIndex = 0;
             // 
-            // btnTinh
+            // btnCong
             // 
-            this.btnTinh.Location = new System.Drawing.Point(89, 174);
-            this.btnTinh.Name = "btnTinh";
-            this.btnTinh.Size = new System.Drawing.Size(75, 23);
-            this.btnTinh.TabIndex = 1;
-            this.btnTinh.Text = "Tính";
-            this.btnTinh.UseVisualStyleBackColor = true;
-            this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
-            // 
-            // txtSo2
-            // 
-            this.txtSo2.Location = new System.Drawing.Point(89, 96);
-            this.txtSo2.Name = "txtSo2";
-            this.txtSo2.Size = new System.Drawing.Size(100, 20);
-            this.txtSo2.TabIndex = 2;
+            this.btnCong.Location = new System.Drawing.Point(35, 116);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(44, 34);
+            this.btnCong.TabIndex = 1;
+            this.btnCong.Text = "+";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 141);
+            this.label1.Location = new System.Drawing.Point(32, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 3;
+            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Số A";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Số B";
+            // 
+            // txtSoB
+            // 
+            this.txtSoB.Location = new System.Drawing.Point(101, 47);
+            this.txtSoB.Name = "txtSoB";
+            this.txtSoB.Size = new System.Drawing.Size(100, 20);
+            this.txtSoB.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(22, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "KQ";
+            // 
+            // txtKQ
+            // 
+            this.txtKQ.Location = new System.Drawing.Point(101, 73);
+            this.txtKQ.Name = "txtKQ";
+            this.txtKQ.Size = new System.Drawing.Size(100, 20);
+            this.txtKQ.TabIndex = 5;
+            // 
+            // btnTru
+            // 
+            this.btnTru.Location = new System.Drawing.Point(101, 116);
+            this.btnTru.Name = "btnTru";
+            this.btnTru.Size = new System.Drawing.Size(44, 34);
+            this.btnTru.TabIndex = 7;
+            this.btnTru.Text = "-";
+            this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
+            // 
+            // btnNhan
+            // 
+            this.btnNhan.Location = new System.Drawing.Point(157, 116);
+            this.btnNhan.Name = "btnNhan";
+            this.btnNhan.Size = new System.Drawing.Size(44, 34);
+            this.btnNhan.TabIndex = 8;
+            this.btnNhan.Text = "*";
+            this.btnNhan.UseVisualStyleBackColor = true;
+            // 
+            // btnChia
+            // 
+            this.btnChia.Location = new System.Drawing.Point(212, 116);
+            this.btnChia.Name = "btnChia";
+            this.btnChia.Size = new System.Drawing.Size(44, 34);
+            this.btnChia.TabIndex = 9;
+            this.btnChia.Text = "/";
+            this.btnChia.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(170, 174);
+            this.button1.Location = new System.Drawing.Point(101, 171);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Tính b";
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -82,10 +142,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnChia);
+            this.Controls.Add(this.btnNhan);
+            this.Controls.Add(this.btnTru);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtKQ);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtSoB);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSo2);
-            this.Controls.Add(this.btnTinh);
-            this.Controls.Add(this.txtSo1);
+            this.Controls.Add(this.btnCong);
+            this.Controls.Add(this.txtSoA);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -95,10 +161,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSo1;
-        private System.Windows.Forms.Button btnTinh;
-        private System.Windows.Forms.TextBox txtSo2;
+        private System.Windows.Forms.TextBox txtSoA;
+        private System.Windows.Forms.Button btnCong;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtSoB;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Button btnTru;
+        private System.Windows.Forms.Button btnNhan;
+        private System.Windows.Forms.Button btnChia;
         private System.Windows.Forms.Button button1;
     }
 }
