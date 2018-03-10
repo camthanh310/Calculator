@@ -117,6 +117,7 @@
             this.btnNhan.TabIndex = 8;
             this.btnNhan.Text = "*";
             this.btnNhan.UseVisualStyleBackColor = true;
+            this.btnNhan.Click += new System.EventHandler(this.btnNhan_Click);
             // 
             // btnChia
             // 
